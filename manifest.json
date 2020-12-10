@@ -1,0 +1,19 @@
+{
+	"name": "BigBlueButton Echo Test Skipper",
+	"version": "0.0.0.1",
+	"manifest_version": 2,
+	"description": "An extension to skip the echo test in BigBlueButton video conferences.",
+	"content_scripts": [{
+		"matches": ["*://*.blindsidenetworks.com/*", "*://*.bigbluebutton.org/*"],
+		"js": ["skipper.js"]
+	}],
+	"icons": {
+		"128": "icon.png"
+	},
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+    "storage"
+  ]
+}

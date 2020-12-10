@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>BBB Echo Skip</title>
+</head>
+
+<body>
+	<div id="colorBar">
+		<h1 id="active">Echo Test Skipper is Always Enabled</h1>
+		<button id="toggle">Toggle</button>
+	</div>
+	<h2>Stealth Mode:</h2>
+	<button id="stealth"></button>
+	<h2>Background Color:</h2>
+	<input type="color" id="backgroundInput">
+	<style>
+		body {
+			min-width: 300px;
+			text-align: center;
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		h2 {
+			color: grey;
+			margin: 0px;
+		}
+
+		#active {
+			color: white;
+			position: relative;
+			top: 20px;
+		}
+
+		#colorBar {
+			height: 35vh;
+			margin-bottom: 20vh;
+		}
+
+		#toggle {
+			border: solid 5px grey;
+			width: 40vw;
+			height: 40vw;
+			border-radius: 25vw;
+			position: absolute;
+			left: 30vw;
+			top: calc(35vh - 20vw);
+			font-size: 18pt;
+		}
+
+		#stealth {
+			margin: 5vw;
+			border-radius: 5px;
+			border: none;
+			color: white;
+			background: #333;
+			padding: 5px;
+			font-size: 18px;
+			width: 90vw;
+		}
+
+		#backgroundInput {
+			width: 90vw;
+			background: #333;
+			border: none;
+			border-radius: 5px;
+			margin: 5vw;
+		}
+
+	</style>
+	<script src="popup.js"></script>
+</body>
+
+</html>
